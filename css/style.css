@@ -33,12 +33,38 @@ svg {
   text-align: center;
 }
 
+h1{
+  color:#E8C31E;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: left;
+  font: 24px "Open Sans",Helvetica Neue,sans-serif;
+}
+
+p{
+  color:#FFFFFF;
+  text-align: left;
+  font: 16px "Open Sans",Helvetica Neue,sans-serif;
+  font-weight: 200;
+  line-height: 150%;
+}
+
 #tetrisPanel {
   position:relative;
   margin: 0 auto;
   text-align: center;
 }
 
+.contentPanelOverlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:100;
+  background: rgba(0,0,0,0.5);
+  padding:50px;
+}
 #pongCanvas {
   position:relative;
 }
