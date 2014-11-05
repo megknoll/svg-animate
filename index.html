@@ -2,26 +2,123 @@
 <html>
 
 <head>
-
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CodePen - Pen</title>
-
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 </head>
 
 <body>
 
 <div id="pongCanvas">
 	<svg>
-	    <rect id="paddle1" width="10" height="40" x="10%" y="25%" fill="white" stroke="white" stroke-width="0px"/>
+	    <rect id="paddle1" width="10" height="50" x="10%" y="25" fill="white" stroke="white" stroke-width="0px"/>
 
-	    <rect id="pong" width="10" height="10" x="30%" y="35%" fill="white" stroke="white" stroke-width="0px" />
+	    <rect id="pong" width="10" height="10" x="30%" y="105" fill="white" stroke="white" stroke-width="0px" />
 	    
-	    <rect id="paddle2" width="10" height="40" x="90%" y="70%" fill="white" stroke="white" stroke-width="0px" />
+	    <rect id="paddle2" width="10" height="50" x="90%" y="400" fill="white" stroke="white" stroke-width="0px" />
 	</svg>
 </div>
+
+<div id="tetrisCanvas">
+	<svg>
+		<g id="tetrisPanel">
+			<g id="tetrisZ">
+			    <rect width="25" height="25" x="35px" y="550px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="60px" y="550px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="60px" y="575px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="85px" y="575px" fill="red" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisL">
+			    <rect width="25" height="25" x="10px" y="525px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="10px" y="550px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="10px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="35px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisT">
+			    <rect width="25" height="25" x="85px" y="550px" fill="blue" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="110px" y="525px" fill="blue" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="110px" y="550px" fill="blue" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="110px" y="575px" fill="blue" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisI">
+			    <rect width="25" height="25" x="135px" y="575px" fill="magenta" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="160px" y="575px" fill="magenta" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="185px" y="575px" fill="magenta" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="210px" y="575px" fill="magenta" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisSQ">
+			    <rect width="25" height="25" x="235px" y="550px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="235px" y="575px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="260px" y="550px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="260px" y="575px" fill="cyan" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisZ2">
+			    <rect width="25" height="25" x="335px" y="550px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="310px" y="550px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="310px" y="575px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="285px" y="575px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisL2">
+			    <rect width="25" height="25" x="360px" y="525px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="360px" y="550px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="360px" y="575px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="335px" y="575px" fill="red" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisT2">
+			    <rect width="25" height="25" x="435px" y="550px" fill="blue" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="410px" y="575px" fill="blue" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="435px" y="575px" fill="blue" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="460px" y="575px" fill="blue" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisI2">
+			    <rect width="25" height="25" x="385px" y="500px" fill="magenta" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="385px" y="525px" fill="magenta" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="385px" y="550px" fill="magenta" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="385px" y="575px" fill="magenta" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisSQ2">
+			    <rect width="25" height="25" x="485px" y="550px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="485px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="510px" y="550px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="510px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisZ3">
+			    <rect width="25" height="25" x="535px" y="575px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="560px" y="575px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="560px" y="550px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="585px" y="550px" fill="cyan" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisL3">
+			    <rect width="25" height="25" x="610px" y="525px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="610px" y="550px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="610px" y="575px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="585px" y="575px" fill="chartreuse" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisT3">
+			    <rect width="25" height="25" x="660px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="685px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="710px" y="575px" fill="yellow" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="685px" y="550px" fill="yellow" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisSQ3">
+			    <rect width="25" height="25" x="735px" y="550px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="735px" y="575px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="760px" y="550px" fill="red" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="760px" y="575px" fill="red" stroke="black" stroke-width="1px"/>
+			</g>
+			<g id="tetrisIMover">
+			    <rect width="25" height="25" x="335px" y="25px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="335px" y="50px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="335px" y="75px" fill="cyan" stroke="black" stroke-width="1px"/>
+			    <rect width="25" height="25" x="335px" y="100px" fill="cyan" stroke="black" stroke-width="1px"/>
+			</g>
+		</g>
+	</svg>
+</div>
+
+
+
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
   <script src='http://julian.com/research/velocity/build/jquery.velocity.min.js'></script><script src='http://julian.com/research/velocity/build/velocity.ui.js'></script>

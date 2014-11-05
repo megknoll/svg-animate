@@ -1,11 +1,77 @@
 /* jquery.js */
 /* jquery.velocity.js */
 
-// Animate an SVG element with a mix of standard CSS properties and SVG-specific properties.
-$("#rect")
-    .delay(500)
-	  .velocity({ x: "+=200", y: "25%" })
-    .velocity({ fillGreen: 255, strokeWidth: 2 })
-	  .velocity({ height: 50, width: 50 })
-    .velocity({ rotateZ: 90, scaleX: 0.5 })
-    .velocity("reverse", { delay: 250 });
+$("#pong").velocity({ x: "+=59%",y: "+=260"});
+$("#paddle2").velocity({ y: "-=50"});
+$("#pong").velocity({ x: "50%",y: "0"});
+$("#paddle1").velocity({ y: "+=225"});
+$("#pong").velocity({ x: "11%",y: "+=260"});
+$("#pong").velocity({ x: "30%",y: "0"});
+$("#pong").velocity({ x: "110%",y: "+=350"});
+
+$.Velocity.mock = true;
+
+$("#tetrisIMover").delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(100);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({ x: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisIMover").children().velocity({y: "+=25px"});
+$("#tetrisIMover").children().delay(500);
+$("#tetrisPanel").children().children().velocity({y: "+=25px"});
