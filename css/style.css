@@ -21,7 +21,22 @@ p {
 
 svg {
   display: block;
-  width: 500px;
+  width: 90%;
+  height: 600px;
+}
+
+#pongCanvas {
+position:relative;
+}
+
+#pongCanvas::after {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 5px dashed #FFF; /*change these values to suit your liking*/
 }
 
 rect {
