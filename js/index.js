@@ -1,6 +1,8 @@
 /* jquery.js */
 /* jquery.velocity.js */
 
+$.Velocity.mock = 2;
+
 $("#pong").velocity({ x: "+=59%",y: "+=260"});
 $("#paddle2").velocity({ y: "-=50"});
 $("#pong").velocity({ x: "50%",y: "0"});
